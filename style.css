@@ -75,6 +75,12 @@ main {
     SECTIONS
 */
 
+/* First, Second */
+
+.first-section, .second-section {
+    box-shadow: 8px 8px 24px 10px var(--clr-Very-Dark-Blue);
+}
+
 /* First */
 .first-section {
     height: 13rem;
@@ -258,11 +264,6 @@ h1 span {
 */
 
 @media(min-width:1024px) {
-    body {
-        background: url(images/bg-desktop.png) no-repeat bottom var(--clr-Very-Dark-Blue);
-        background-size: contain;
-    }
-
     main {
         flex-direction: row;
         align-items: flex-end;
@@ -313,7 +314,12 @@ h1 span {
     }
 }
 
-
+@media(min-width:1440px) {
+    body {
+        background: url(images/bg-desktop.png) no-repeat bottom var(--clr-Very-Dark-Blue);
+        background-size: contain;
+    }
+}
 
 
 /*
